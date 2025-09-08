@@ -157,7 +157,6 @@ const markBMI = markWeight / (markHeight * markHeight);
 const johnBMI = johnWeight / (johnHeight * johnHeight);
 const johnHigherBMI = johnBMI > markBMI;
 console.log(markBMI, johnBMI, johnHigherBMI);
-*/
 
 //STRINGS AND TEMPLATE LITERALS
 const firstName = "Jonas";
@@ -181,4 +180,30 @@ console.log('String with \n\
 console.log(`Sring with
 multiple
 lines`);
+*/
+
+//TAKING DECISIONS IF ELSE STATEMENTS
+//this is also known as controlled structure
+const age = 15;
+const isOldEnough = 18;
+
+if(age >= isOldEnough) {
+    console.log('Sarah can start driving license 🚗');
+} else {
+    const yearsLeft = isOldEnough - age;
+    console.log(`Sarah is too young. Wait another ${yearsLeft}`);
+}
+
+const birthYear = 2012;
+let century;
+
+if (birthYear <= 2000) {
+    century = 20;
+    console.log(century);
+    
+} else {
+    century = 21;
+    console.log(century);
+    
+}
 
