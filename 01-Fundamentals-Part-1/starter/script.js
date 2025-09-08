@@ -158,3 +158,27 @@ const johnBMI = johnWeight / (johnHeight * johnHeight);
 const johnHigherBMI = johnBMI > markBMI;
 console.log(markBMI, johnBMI, johnHigherBMI);
 */
+
+//STRINGS AND TEMPLATE LITERALS
+const firstName = "Jonas";
+const job = 'teacher';
+const birthYear = 1991;
+const year = 2037;
+
+//string concatination
+const jonas = "I'm " + firstName + ', a' + ' ' + (year - birthYear) + ' years old ' + job + '!'
+console.log(jonas);
+
+//template literal
+const jonasNew = `I'm ${firstName} a ${year - birthYear} years old ${job}!`;
+console.log(jonasNew);
+
+//multiline strings
+console.log('String with \n\
+    multiple \n\
+    lines');
+
+console.log(`Sring with
+multiple
+lines`);
+
