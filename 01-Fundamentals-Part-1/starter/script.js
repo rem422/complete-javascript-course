@@ -1,27 +1,27 @@
-    // let js = "amazing"; 
-    // console.log(40 + 8 + 23 -10);
-
-// VALUES AND VARIABLES
-//     console.log('Jonas');
-//     console.log(23);
-    
-//     let firstName = "Jonas";
-
-
-//     console.log(firstName);
-//     console.log(firstName);
-//     console.log(firstName);
-    
-//     //naming conventions
-//     let jonas_matilda ="JM";
-//     let $lastName = 'Mathew';
-//     let myWork = 'Web Developer';
-
-// //Descriptive naming
-//     let myFirstJob = 'Programmer';
-//     let myCurrentJob = 'Teacher';
-
 /*
+    let js = "amazing"; 
+    console.log(40 + 8 + 23 -10);
+
+VALUES AND VARIABLES
+    console.log('Jonas');
+    console.log(23);
+    
+    let firstName = "Jonas";
+
+
+    console.log(firstName);
+    console.log(firstName);
+    console.log(firstName);
+    
+    //naming conventions
+    let jonas_matilda ="JM";
+    let $lastName = 'Mathew';
+    let myWork = 'Web Developer';
+
+//Descriptive naming
+    let myFirstJob = 'Programmer';
+    let myCurrentJob = 'Teacher';
+
 //DATA TYPES
 // JavaScript has dynamic typing: We do not have to manually define the data type of the value stored in a variable. Instead, data types are defined automatically.
 
@@ -61,9 +61,9 @@ console.log(typeof null); // Type of null is object (this is a bug in JavaScript
 
 //6. Symbol (ES2015): Value that is unique and cannot be changed [Not useful for now]
 //7. Symbol (ES2020): Large integers than the Number type can hold
-*/
 
-//LET, CONST, VAR
+
+//LET, CONST and VAR
 // As of best practice always use const by default and only use let only when you are really sure the variable will change in the future.
 // let is blocked scoped and var is function scoped.
 
@@ -82,6 +82,42 @@ const birthYear = 1991;
 var job = 'programmer';
 job = 'Teacher'
 console.log(job);
+*/
 
+//BASIC OPERATORS
+//An operator allows us to transform values or combine multiple values and do all kind of work with values.
 
+//mathimatical operators
+    const now = 2037;
+    const ageJonas = now - 1991;
+    const ageSarah = now - 2018;
+    console.log(ageJonas , ageSarah);
+    
+    // 2 ** 3 means 2 to the power of 3 = 2 * 2 * 2
+    console.log(ageJonas * 2, ageJonas / 10, 2 ** 3);
+    
+    //plus sign can olso be used in string concatination
+    const firstName = 'Jonas';
+    const lastName = 'Schmedtmann';
+    console.log(firstName + ' ' + lastName);
+    
+//Assignment operators
+let x = 10 + 5; //15
+x += 10 // x = x + 10 = 25
+x *= 4 // x = x * 4 = 100
+x++ //x = x + 1 = 101
+x-- //x = x - 1 = 100
+x-- //x = x - 1 = 99
+console.log(x);
 
+//comparison operators
+//>, <, >=, <=
+console.log(ageJonas > ageSarah); 
+console.log(ageSarah >= 18);
+
+const isFullAge = ageSarah >= 18;
+console.log(isFullAge);
+
+console.log(now - 1991 > now - 2018);
+
+//Logical operators
