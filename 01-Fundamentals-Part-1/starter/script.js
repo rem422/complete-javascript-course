@@ -21,6 +21,7 @@
 //     let myFirstJob = 'Programmer';
 //     let myCurrentJob = 'Teacher';
 
+/*
 //DATA TYPES
 // JavaScript has dynamic typing: We do not have to manually define the data type of the value stored in a variable. Instead, data types are defined automatically.
 
@@ -60,5 +61,27 @@ console.log(typeof null); // Type of null is object (this is a bug in JavaScript
 
 //6. Symbol (ES2015): Value that is unique and cannot be changed [Not useful for now]
 //7. Symbol (ES2020): Large integers than the Number type can hold
+*/
+
+//LET, CONST, VAR
+// As of best practice always use const by default and only use let only when you are really sure the variable will change in the future.
+// let is blocked scoped and var is function scoped.
+
+//let is used when you need to mutate a variable or declare an empty variable.
+let age =30;
+age = 31;
+console.log(age);
+
+///const is used to declare variables that are not suporsed to change anywhere in the programm and we cannot declare empty variables using const.
+const birthYear = 1991;
+// birthYear = 1990;
+// const job;
+
+
+//var is the old way of declaring a variable and can be used the same as let but  it should completely be avoided. 
+var job = 'programmer';
+job = 'Teacher'
+console.log(job);
+
 
 
