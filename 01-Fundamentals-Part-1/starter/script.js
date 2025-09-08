@@ -200,14 +200,13 @@ if (birthYear <= 2000) {
     console.log(century);
     
 }
-*/
 
 //CODING CHALLENGE #2
 // //Data 1:
-// const markWeight = 78;
-// const markHeight = 1.69;
-// const johnWeight = 92;
-// const johnHeight = 1.95;
+const markWeight = 78;
+const markHeight = 1.69;
+const johnWeight = 92;
+const johnHeight = 1.95;
 
 //Data 2:
 const markWeight = 95;
@@ -223,6 +222,28 @@ if(markBMI > johnBMI) {
 } else {
     console.log(`John's BMI (${johnBMI}) is higher than Mark's BMI (${markBMI})`);
 }
+*/
+
+//TYPE CONVERSION & COERCION
+//type conversion
+const inputYear = '1991';
+console.log(Number(inputYear), inputYear);
+console.log( Number(inputYear) + 18);
+
+console.log(Number('Jonas'));
+console.log(typeof NaN);
+
+console.log(String(23), 23);
+
+//type coercion
+console.log('I am ' + 23 +  ' years old');
+console.log('I am ' + '23' +  ' years old');
+console.log('23' - '10' - 3);
+console.log('23' + '10' - 3);
+console.log('23' * '2');
+console.log('23' / '2');
+
+
 
 
 
