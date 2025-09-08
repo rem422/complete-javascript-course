@@ -222,7 +222,6 @@ if(markBMI > johnBMI) {
 } else {
     console.log(`John's BMI (${johnBMI}) is higher than Mark's BMI (${markBMI})`);
 }
-*/
 
 //TYPE CONVERSION & COERCION
 //type conversion
@@ -246,6 +245,7 @@ console.log('23' / '2');
 let n = '1' + 1; // '11
 n = n - 1;
 console.log(n);
+*/
 
 
 
