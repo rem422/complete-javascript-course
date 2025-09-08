@@ -180,7 +180,6 @@ console.log('String with \n\
 console.log(`Sring with
 multiple
 lines`);
-*/
 
 //TAKING DECISIONS IF ELSE STATEMENTS
 //this is also known as controlled structure
@@ -206,4 +205,38 @@ if (birthYear <= 2000) {
     console.log(century);
     
 }
+*/
+
+//CODING CHALLENGE #2
+// //Data 1:
+// const markWeight = 78;
+// const markHeight = 1.69;
+// const johnWeight = 92;
+// const johnHeight = 1.95;
+
+// const markBMI = markWeight / markHeight ** 2;
+// const johnBMI = johnWeight / johnHeight ** 2;
+
+// if(markBMI > johnBMI) {
+//     console.log(`Mark's BMI (${markBMI}) is higher than John's BMI (${johnBMI})`);
+// } else {
+//     console.log(`John's BMI (${johnBMI}) is higher than Mark's BMI (${markBMI})`);
+// }
+
+//Data 2:
+const markWeight = 95;
+const markHeight = 1.88;
+const johnWeight = 85;
+const johnHeight = 1.75;
+
+const markBMI = markWeight / (markHeight * markHeight);
+const johnBMI = johnWeight / (johnHeight * johnHeight);
+
+if(markBMI > johnBMI) {
+    console.log(`Mark's BMI (${markBMI}) is higher than John's BMI (${johnBMI})`);
+} else {
+    console.log(`John's BMI (${johnBMI}) is higher than Mark's BMI (${markBMI})`);
+}
+
+
 
