@@ -142,11 +142,6 @@ const markHeight = 1.69;
 const johnWeight = 92;
 const johnHeight = 1.95;
 
-const markBMI = markWeight / markHeight ** 2;
-const johnBMI = johnWeight / johnHeight ** 2;
-const markHigherBMI = markBMI > johnBMI;
-console.log(markBMI, johnBMI, markHigherBMI);
-
 //Data 2:
 const markWeight = 95;
 const markHeight = 1.88;
@@ -213,15 +208,6 @@ if (birthYear <= 2000) {
 // const markHeight = 1.69;
 // const johnWeight = 92;
 // const johnHeight = 1.95;
-
-// const markBMI = markWeight / markHeight ** 2;
-// const johnBMI = johnWeight / johnHeight ** 2;
-
-// if(markBMI > johnBMI) {
-//     console.log(`Mark's BMI (${markBMI}) is higher than John's BMI (${johnBMI})`);
-// } else {
-//     console.log(`John's BMI (${johnBMI}) is higher than Mark's BMI (${markBMI})`);
-// }
 
 //Data 2:
 const markWeight = 95;
