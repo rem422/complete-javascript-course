@@ -328,18 +328,28 @@ if(hasDriversLicense && hasGoodVision && !isTired) {
 
 //Dolphine scores
 const scoreDolphins = (97 + 112 + 101) / 3;
-
 //Koalas scores
 const scoreKoalas = (109 + 95 + 106) / 3;
-
 console.log(scoreDolphins, scoreKoalas);
 
+if (scoreDolphins > scoreKoalas) {
+    console.log(`Team Dolphins wins with ${scoreDolphins} points.`);
+} else if (scoreKoalas > scoreDolphins) {
+    console.log(`Team Koalas wins with ${scoreKoalas} points.`);
+} else if (scoreDolphins === scoreKoalas) {
+    console.log(`Both teams draw with ${scoreDolphins} points.`);
+} else {
+    console.log(`No team wins.`);
+}
+
+// BONUS 1
 const minimumScore = 100;
 
 if (scoreDolphins > scoreKoalas && scoreDolphins >= minimumScore) {
     console.log(`Team Dolphins wins with ${scoreDolphins} points.`);
 } else if (scoreKoalas > scoreDolphins && scoreKoalas >= minimumScore) {
     console.log(`Team Koalas wins with ${scoreKoalas} points.`);
+    //BONUS 2
 } else if (scoreDolphins === scoreKoalas && scoreDolphins >= minimumScore && scoreKoalas >= minimumScore) {
     console.log(`Both teams draw with ${scoreDolphins} points.`);
 } else {
