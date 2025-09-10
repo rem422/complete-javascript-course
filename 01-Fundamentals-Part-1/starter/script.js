@@ -255,7 +255,18 @@ console.log(Boolean('Jonas'));
 console.log(Boolean({}));
 console.log(Boolean(""));
 
+const money = 100;
+if (money) {
+    console.log(`Dont spent it all`);
+} else {
+    console.log(`You should get a job!`);
+}
 
+let height = 0;
 
-
+if (height) {
+    console.log(`YAY! is defined`);
+} else {
+    console.log(`Height is UNDEFINED`);
+}
 
