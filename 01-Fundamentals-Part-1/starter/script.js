@@ -291,7 +291,6 @@ if(favourite === 23) {// 22 === 23 -> false
 if (favourite !== 23) {
     console.log(`Why not 23?`);
 }
-*/
 
 //BOOLEAN LOGIC
 const hasDriversLicense = true //A
@@ -302,11 +301,11 @@ console.log(hasDriversLicense || hasGoodVision);
 console.log(!hasDriversLicense);
 
 
-// if(hasDriversLicense && hasGoodVision) {
-//     console.log(`Sarah is able to drive!`);
-// } else {
-//     console.log(`Someone else should drive...`);
-// }
+if(hasDriversLicense && hasGoodVision) {
+    console.log(`Sarah is able to drive!`);
+} else {
+    console.log(`Someone else should drive...`);
+}
 
 const isTired = false //C
 console.log(hasDriversLicense || hasGoodVision || isTired);
@@ -317,3 +316,34 @@ if(hasDriversLicense && hasGoodVision && !isTired) {
 } else {
     console.log(`Someone else should drive...`);
 }
+*/
+
+//CODING CHALLENGE #3
+/* 
+    Data 1: Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110 //No team wins
+    Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123 //Koalas win
+    Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106 // both teams draw
+ */
+
+
+//Dolphine scores
+const scoreDolphins = (97 + 112 + 101) / 3;
+
+//Koalas scores
+const scoreKoalas = (109 + 95 + 106) / 3;
+
+console.log(scoreDolphins, scoreKoalas);
+
+const minimumScore = 100;
+
+if (scoreDolphins > scoreKoalas && scoreDolphins >= minimumScore) {
+    console.log(`Team Dolphins wins with ${scoreDolphins} points.`);
+} else if (scoreKoalas > scoreDolphins && scoreKoalas >= minimumScore) {
+    console.log(`Team Koalas wins with ${scoreKoalas} points.`);
+} else if (scoreDolphins === scoreKoalas && scoreDolphins >= minimumScore && scoreKoalas >= minimumScore) {
+    console.log(`Both teams draw with ${scoreDolphins} points.`);
+} else {
+    console.log(`No team wins.`);
+}
+
+
