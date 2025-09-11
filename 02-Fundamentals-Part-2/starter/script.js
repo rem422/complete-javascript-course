@@ -9,7 +9,6 @@ if(hasDriversLicense) console.log(`I can Drive :D`);
 const interface = 'Audio';
 const private = 54;
 const if = 23;
-*/
 
 //FUNCTIONS
 function logger() {
@@ -33,6 +32,22 @@ const appleOrangeJuice = fruitProcessor(2, 4);
 console.log(appleOrangeJuice);
 
 console.log(Number(23));
+*/
 
+//FUNCTION DECLARATIONS vs. EXPRESSION
+//function declaration can be called before defining
+function calcAge1(birthYear) {
+    return 2037 - birthYear;
+}
 
+const age1 = calcAge1(1991);
+
+//function expression
+const calcAge2 = function(birthYear) {
+    return 2037 - birthYear;
+}
+
+const age2 = calcAge2(1991)
+
+console.log(age1, age2);
 
