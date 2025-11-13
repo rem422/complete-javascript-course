@@ -181,34 +181,73 @@ console.log(yearsUntilRetirement('Bob', 1980));
 // console.log(bills, tips, totals);
 
 //INTRODUCTION TO OBJECTS
+// const jonas = {
+//     firstName: 'Jonas',
+//     lastName: 'Schmedtmann',
+//     age: 2037 - 1991,
+//     job: 'teacher',
+//     friends: ['Michael', 'Steven', 'Peter'],
+// };
+// console.log(jonas);
+// //Dot vs. Bracket Notation
+// console.log(jonas.lastName);
+// console.log(jonas['lastName']);
+//
+// const nameKey = 'Name';
+// console.log(jonas['first' + nameKey]);
+// console.log(jonas['last' + nameKey]);
+//
+// const interestedIn = prompt('What do you want to know about Jonas? Choose between firstName, lastName, age, job and friends');
+//
+// if (jonas[interestedIn]) {
+//     console.log(jonas[interestedIn]);
+// } else {
+//     alert('Wrong request! Choose between firstName, lastName, age, job and friends');
+// }
+//
+// jonas.location = 'Portugal';
+// jonas['twitter'] = '@jonasschmedtman';
+// console.log(jonas);
+//
+// //challenge
+// //"Jonas has 3 friends, and his best friend is called Michael"
+// console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}.`);
+
+//object methods
 const jonas = {
     firstName: 'Jonas',
     lastName: 'Schmedtmann',
-    age: 2037 - 1991,
+    birthYear: 1991,
     job: 'teacher',
     friends: ['Michael', 'Steven', 'Peter'],
+    hasDriversLicense: true,
+    // calcAge: (birthYear) => {
+    //     return new Date().getFullYear() - birthYear;
+    // },
+    // calcAge: function() {
+    //     // console.log(this);
+    //     return 2037 - this.birthYear;
+    // },
+    calcAge: function() {
+        this.age = 2037 - this.birthYear;
+        return this.age;
+    },
+
+    getSummary: function(){
+        return `${this.firstName} is a ${this.calcAge()} years old ${jonas.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`
+    }
 };
-console.log(jonas);
 
-console.log(jonas.lastName);
-console.log(jonas['lastName']);
+// console.log(jonas.calcAge(1991)) //dot notation
+// console.log(jonas['calcAge'](1991)) //bracket notation
+console.log(jonas.calcAge());
 
-const nameKey = 'Name';
-console.log(jonas['first' + nameKey]);
-console.log(jonas['last' + nameKey]);
-
-const interestedIn = prompt('What do you want to know about Jonas? Choose between firstName, lastName, age, job and friends');
-
-if (jonas[interestedIn]) {
-    console.log(jonas[interestedIn]);
-} else {
-    alert('Wrong request! Choose between firstName, lastName, age, job and friends');
-}
-
-jonas.location = 'Portugal';
-jonas['twitter'] = '@jonasschmedtman';
-console.log(jonas);
+console.log(jonas.age);
+console.log(jonas.age);
+console.log(jonas.age);
 
 //challenge
-//"Jonas has 3 friends, and his best friend is called Michael"
-console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}.`);
+//Jonas is a 46 years old teacher, and has a driver's license.
+console.log(jonas.getSummary());
+
+
