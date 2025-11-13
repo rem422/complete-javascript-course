@@ -136,35 +136,46 @@ console.log(yearsUntilRetirement('Bob', 1980));
 // console.log(ages);
 
 //BASIC ARRAYS OPERATIONS
-const friends = ['Michael', 'Steven', 'Peter'];
+// const friends = ['Michael', 'Steven', 'Peter'];
+//
+// //Add elements
+// const newLength = friends.push('Jay'); //Adds element to the end of an array
+// console.log(friends);
+// console.log(newLength);
+//
+// friends.unshift('John'); //Adds element to the beginning of an array
+// console.log(friends);
+//
+// //Remove elements
+// friends.pop(); //Removes the last element of an array
+// const popped = friends.pop(); //Removes the first element of an array
+// console.log(popped);
+// console.log(friends);
+//
+// friends.shift(); //Removes the first element of an array
+// console.log(friends);
+//
+// //shows the index of an element
+// console.log(friends.indexOf('Michael'));
+// console.log(friends.indexOf('Bob'));
+//
+// friends.push(23);
+// console.log(friends.includes('Steven'));
+// console.log(friends.includes('Bob'));
+// console.log(friends.includes('23'));
+// console.log(friends.includes(23));
+//
+// if(friends.includes('Steven')) {
+//     console.log('You have a friend called Steven');
+// };
 
-//Add elements
-const newLength = friends.push('Jay'); //Adds element to the end of an array
-console.log(friends);
-console.log(newLength);
+//CHALLENGE #2
+const calcTip = (bill) => {
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+}
 
-friends.unshift('John'); //Adds element to the beginning of an array
-console.log(friends);
+const bills = [125, 555, 44];
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 
-//Remove elements
-friends.pop(); //Removes the last element of an array
-const popped = friends.pop(); //Removes the first element of an array
-console.log(popped);
-console.log(friends);
-
-friends.shift(); //Removes the first element of an array
-console.log(friends);
-
-//shows the index of an element
-console.log(friends.indexOf('Michael'));
-console.log(friends.indexOf('Bob'));
-
-friends.push(23);
-console.log(friends.includes('Steven'));
-console.log(friends.includes('Bob'));
-console.log(friends.includes('23'));
-console.log(friends.includes(23));
-
-if(friends.includes('Steven')) {
-    console.log('You have a friend called Steven');
-};
+console.log(bills, tips, totals);
